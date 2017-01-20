@@ -1,0 +1,36 @@
+{
+  "name": "alexa-node-example",
+  "version": "1.0.0",
+  "description": "An example Amazon Alexa skill built with Claudia.js and integrated with Dialog Analytics",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "debug": "node debug bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "claudia create --configure-alexa-skill --region us-east-1 --api-module bot --cache-api-config apiConfig --set-env-from-json .env.json",
+    "update": "claudia update --cache-api-config apiConfig --set-env-from-json .env.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dialoganalytics/alexa-node-example.git"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "claudia.js",
+    "conversation",
+    "dialog"
+  ],
+  "author": "Dialog Analytics",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dialoganalytics/alexa-node-example/issues"
+  },
+  "homepage": "https://github.com/dialoganalytics/alexa-node-example#readme",
+  "dependencies": {
+    "claudia": "^2.6.0",
+    "claudia-bot-builder": "^2.12.0",
+    "dialog-api": "0.0.10",
+    "lodash.sample": "^4.2.1"
+  }
+}
